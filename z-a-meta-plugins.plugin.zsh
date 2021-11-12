@@ -24,14 +24,14 @@ autoload -Uz ∧za-meta-plugins-before-load-handler \
 ∧za-meta-plugins-help-null-handler() { :; }
 
 # The unscoping-support hook.
-@zinit-register-annex "z-a-meta-plugins" \
+@zinit-register-annex "zinit-annex-meta-plugins" \
     hook:before-load-4 \
     ∧za-meta-plugins-before-load-handler \
     ∧za-meta-plugins-help-null-handler \
     "skip''" # Add a new ice
 
 # The subcommand `meta'.
-@zinit-register-annex "z-a-meta-plugins" \
+@zinit-register-annex "zinit-annex-meta-plugins" \
     subcommand:default-ice \
     ∧za-meta-plugins-default-ice-cmd \
     ∧za-meta-plugins-default-ice-cmd-help-handler
@@ -40,8 +40,8 @@ autoload -Uz ∧za-meta-plugins-before-load-handler \
 typeset -gA Zinit_Annex_Meta_Plugins_Map
 Zinit_Annex_Meta_Plugins_Map=(
     # Zinit annexes
-    annexes     "zinit-zsh/z-a-unscope zinit-zsh/z-a-as-monitor zinit-zsh/z-a-patch-dl \
-                    zinit-zsh/z-a-rust zinit-zsh/z-a-submods zinit-zsh/z-a-bin-gem-node"
+    annexes     "zinit-zsh/zinit-annex-unscope zinit-zsh/zinit-annex-as-monitor zinit-zsh/zinit-annex-patch-dl \
+                    zinit-zsh/zinit-annex-rust zinit-zsh/zinit-annex-submods zinit-zsh/zinit-annex-bin-gem-node"
     # Annexes + the zinit-console
     annexes+con "zinit-zsh/zinit-console annexes"
 
@@ -89,14 +89,14 @@ typeset -g _std="lucid"
 Zinit_Annex_Meta_Plugins_Config_Map=(
     # @zinit-zsh (all annexes + extensions, without Meta-Plugins, obviously)
     zinit-zsh/zinit-console     "$_std"
-    zinit-zsh/z-a-as-monitor    "$_std"
-    zinit-zsh/z-a-patch-dl      "$_std"
-    zinit-zsh/z-a-unscope       "$_std"
-    zinit-zsh/z-a-submods       "$_std"
-    zinit-zsh/z-a-rust          "$_std"
-    zinit-zsh/z-a-bin-gem-node  "$_std"
-    zinit-zsh/z-a-man           "$_std"
-    zinit-zsh/z-a-test          "$_std"
+    zinit-zsh/zinit-annex-as-monitor    "$_std"
+    zinit-zsh/zinit-annex-patch-dl      "$_std"
+    zinit-zsh/zinit-annex-unscope       "$_std"
+    zinit-zsh/zinit-annex-submods       "$_std"
+    zinit-zsh/zinit-annex-rust          "$_std"
+    zinit-zsh/zinit-annex-bin-gem-node  "$_std"
+    zinit-zsh/zinit-annex-man           "$_std"
+    zinit-zsh/zinit-annex-test          "$_std"
     # @zsh-users
     zsh-users/zsh-autosuggestions       "$_std atload'_zsh_autosuggest_start;'"
     zsh-users/zsh-syntax-highlighting   "$_std atinit'ZINIT[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay;'"

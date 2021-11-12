@@ -3,7 +3,7 @@
 ### **Install groups of plugins via a single, friendly label …**
 ### **… and also have the curated, optimal ice lists automatically applied !**
 
-![screenshot](https://raw.githubusercontent.com/zinit-zsh/z-a-meta-plugins/master/images/fuzzy-mplg-ex.png)
+![screenshot](https://raw.githubusercontent.com/zinit-zsh/zinit-annex-meta-plugins/master/images/fuzzy-mplg-ex.png)
 
 ## Rationale
 
@@ -33,7 +33,7 @@ Other unique benefits of the Meta-Plugins annex:
 
 |Meta-Plugin ID     | Contained sub-plugins |
 |:-----------------:|-----------------------|
-|**annexes**        |[zinit-zsh/z-a-unscope](https://github.com/zinit-zsh/z-a-unscope), [zinit-zsh/z-a-as-monitor](https://github.com/zinit-zsh/z-a-as-monitor), [zinit-zsh/z-a-patch-dl](https://github.com/zinit-zsh/z-a-patch-dl), [zinit-zsh/z-a-rust](https://github.com/zinit-zsh/z-a-rust), [zinit-zsh/z-a-submods](https://github.com/zinit-zsh/z-a-submods), [zinit-zsh/z-a-bin-gem-node](https://github.com/zinit-zsh/z-a-bin-gem-node)                        | 
+|**annexes**        |[zinit-zsh/zinit-annex-unscope](https://github.com/zinit-zsh/zinit-annex-unscope), [zinit-zsh/zinit-annex-as-monitor](https://github.com/zinit-zsh/zinit-annex-as-monitor), [zinit-zsh/zinit-annex-patch-dl](https://github.com/zinit-zsh/zinit-annex-patch-dl), [zinit-zsh/zinit-annex-rust](https://github.com/zinit-zsh/zinit-annex-rust), [zinit-zsh/zinit-annex-submods](https://github.com/zinit-zsh/zinit-annex-submods), [zinit-zsh/zinit-annex-bin-gem-node](https://github.com/zinit-zsh/zinit-annex-bin-gem-node)                        | 
 |**annexes+con**    |[zinit-zsh/zinit-console](https://github.com/zinit-zsh/zinit-console), annexes (**meta-plugin**)                 |
 |                   |                                                 |
 |**zsh-users**      |[zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions)        |
