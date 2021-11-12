@@ -12,7 +12,7 @@
 ._zinit
 .zinit_lastupd
 
-# zdharma/zshelldoc tool's files
+# zdharma-continuum/zshelldoc tool's files
 zsdoc/data
 
 # ohmyzsh/ohmyzsh/plugins/per-directory-history plugin's files
