@@ -1,8 +1,8 @@
 # -*- mode: sh; sh-indentation: 4; indent-tabs-mode: nil; sh-basic-offset: 4; -*-
 # Copyright (c) 2020 Sebastian Gniazdowski
 
-∧za-meta-plugins-meta-cmd-help-handler() {
-    +zinit-message "—— {pre}meta {meta}--help{data}/{meta}-h" \
+za-meta-plugins-default-ice-cmd-help-handler() {
+    +zinit-message "—— {pre}default-ice {meta}--help{data}/{meta}-h" \
             "{rst}{nl}{nl}" \
             \
             "{msg2}Description:{rst}{nl}" \

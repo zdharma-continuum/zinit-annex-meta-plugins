@@ -4,7 +4,7 @@
 # Copyright (c) 2020 Sebastian Gniazdowski
 # License: MIT
 
-∧za-meta-plugins-default-ice-cmd() {
+za-meta-plugins-default-ice-cmd() {
     # Set the base and typically useful options.
     builtin emulate -LR zsh
     builtin setopt extendedglob warncreateglobal typesetsilent noshortloops rcquotes
@@ -45,7 +45,7 @@
 
     # --help/-h
     if (( ${#help} )) {
-        ∧za-meta-plugins-default-ice-cmd-help-handler
+        za-meta-plugins-default-ice-cmd-help-handler
         return retval
     }
 
