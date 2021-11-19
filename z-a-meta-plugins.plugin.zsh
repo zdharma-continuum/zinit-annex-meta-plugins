@@ -16,9 +16,9 @@ Zinit_Annex_Meta_Plugins[0]="$0" Zinit_Annex_Meta_Plugins[repo-dir]="${0:h}"
 typeset -gA Plugins
 Plugins[META_PLUGINS_DIR]="${0:h}"
 
-autoload -Uz ∧za-meta-plugins-before-load-handler \
-    ∧za-meta-plugins-default-ice-cmd-help-handler \
-    ∧za-meta-plugins-default-ice-cmd
+autoload -Uz za-meta-plugins-before-load-handler \
+    za-meta-plugins-default-ice-cmd-help-handler \
+    za-meta-plugins-default-ice-cmd
 
 # An empty stub to fill the help handler fields
 ∧za-meta-plugins-help-null-handler() { :; }
@@ -26,15 +26,15 @@ autoload -Uz ∧za-meta-plugins-before-load-handler \
 # The unscoping-support hook.
 @zinit-register-annex "zinit-annex-meta-plugins" \
     hook:before-load-4 \
-    ∧za-meta-plugins-before-load-handler \
+    za-meta-plugins-before-load-handler \
     ∧za-meta-plugins-help-null-handler \
     "skip''" # Add a new ice
 
 # The subcommand `meta'.
 @zinit-register-annex "zinit-annex-meta-plugins" \
     subcommand:default-ice \
-    ∧za-meta-plugins-default-ice-cmd \
-    ∧za-meta-plugins-default-ice-cmd-help-handler
+    za-meta-plugins-default-ice-cmd \
+    za-meta-plugins-default-ice-cmd-help-handler
 
 # The map in which the definitions of the meta-plugins are being stored.
 typeset -gA Zinit_Annex_Meta_Plugins_Map
