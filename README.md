@@ -48,7 +48,7 @@ Other unique benefits of the Meta-Plugins annex:
 |                   |                                                 |
 |**developer**      |[github-issues](https://github.com/Zsh-Packages/github-issues) (**package**), [github-issues-srv](https://github.com/Zsh-Packages/github-issues-srv) (**package**), [molovo/color](https://github.com/molovo/color), [molovo/revolver](https://github.com/molovo/revolver), [molovo/zunit](https://github.com/molovo/zunit), [voronkovich/gitignore](https://github.com/voronkovich/gitignore.plugin.zsh), [jonas/tig](https://github.com/jonas/tig)             |
 |                   |                                                 |
-|**console-tools**  |[dircolors-material](https://github.com/Zsh-Packages/dircolors-material) (**package**), sharkdp (**meta-plugin**), [ogham/exa](https://github.com/ogham/exa), [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep), [jonas/tig](https://github.com/jonas/tig)|
+|**console-tools**  |[dircolors-material](https://github.com/Zsh-Packages/dircolors-material) (**package**), sharkdp (**meta-plugin**), [ogham/exa](https://github.com/ogham/exa), [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep), [jonas/tig](https://github.com/jonas/tig), [direnv/direnv](https://github.com/direnv/direnv)|
 |                   |                                                 |
 |**fuzzy**          |[fzf](https://github.com/Zsh-Packages/fzf) (**package**), [fzy](https://github.com/Zsh-Packages/fzy) (**package**), [lotabout/skim](https://github.com/lotabout/skim), [peco/peco](https://github.com/peco/peco)                  |
 |**fuzzy-src**      |fzf-go, [fzy](https://github.com/Zsh-Packages/fzy) (**package**), skim-cargo, peco-go                    |
