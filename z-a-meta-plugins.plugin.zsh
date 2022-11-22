@@ -48,7 +48,7 @@ Zinit_Annex_Meta_Plugins_Map=(
     # @zsh-users
     zsh-users   "zsh-users/zsh-syntax-highlighting zsh-users/zsh-autosuggestions zsh-users/zsh-completions"
     zsh-users+fast "zdharma-continuum/fast-syntax-highlighting zsh-users/zsh-autosuggestions zsh-users/zsh-completions"
-    
+
     # @zdharma
     zdharma     "zdharma-continuum/fast-syntax-highlighting zdharma-continuum/history-search-multi-word zdharma-continuum/zsh-diff-so-fancy"
     zdharma2    "zdharma-continuum/zconvey zdharma-continuum/zui zdharma-continuum/zflai"
@@ -67,7 +67,7 @@ Zinit_Annex_Meta_Plugins_Map=(
 
     # General console utilities. Includes also a LS_COLORS theme with
     # the Zsh completion configured.
-    console-tools "dircolors-material sharkdp ogham/exa BurntSushi/ripgrep jonas/tig"
+    console-tools "dircolors-material sharkdp ogham/exa BurntSushi/ripgrep jonas/tig direnv/direnv"
 
     # Fuzzy searchers (4 of them).
     fuzzy       "fzf fzy lotabout/skim peco/peco"
@@ -187,6 +187,9 @@ Zinit_Annex_Meta_Plugins_Config_Map=(
 
     # @woefe
     woefe/git-prompt.zsh      "$_std atload'_zsh_git_prompt_precmd_hook' nocd"
+
+    # @direnv
+    direnv/direnv             "$_std binary from'gh-r' mv'direnv* direnv' sbin'**/direnv(.exe|) -> direnv'"
 )
 
 # Snippets
