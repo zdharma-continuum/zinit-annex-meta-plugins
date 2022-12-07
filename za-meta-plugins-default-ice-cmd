@@ -56,7 +56,7 @@ za-meta-plugins-default-ice-cmd() {
     }
 
     local -A ICES
-    .zinit-ice "$@"
+    _zi::-ice "$@"
     integer iceret=$?
 
     Zinit_Annex_Meta_Plugins[default-ices]=${(j: :)${(@qkv)ICES}}

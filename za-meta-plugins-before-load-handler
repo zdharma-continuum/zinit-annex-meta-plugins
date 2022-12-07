@@ -79,7 +79,7 @@ za-meta-plugins-before-load-handler() {
         # Check if any plugins are missing on the disk.
         for p ( ${plugin_array:|on_demand_skip} ) {
             if [[ -z $Zinit_Annex_Meta_Plugins_Map[$p] ]] && \
-                ! .zinit-get-object-path AUTO $p
+                ! _zi::-get-object-path AUTO $p
             then
                 ibshow_messages=1
                 not_existing+=( $p )
@@ -102,7 +102,7 @@ za-meta-plugins-before-load-handler() {
             local -a skipped
             for p ( $plugin_array ) {
                 count+=1
-                .zinit-any-colorify-as-uspl2 $p
+                _zi::-any-colorify-as-uspl2 $p
                 [[ $p = $plugin_array[-1] ]] && local enotlast= || local enotlast=0
                 REPLY=${REPLY//\//∕}
 
