@@ -24,14 +24,14 @@ autoload -Uz za-meta-plugins-before-load-handler \
 za-meta-plugins-help-null-handler() { :; }
 
 # The unscoping-support hook.
-@zinit-register-annex "zinit-annex-meta-plugins" \
+@zi::register-annex "zinit-annex-meta-plugins" \
     hook:before-load-4 \
     za-meta-plugins-before-load-handler \
     za-meta-plugins-help-null-handler \
     "skip''" # Add a new ice
 
 # The subcommand `meta'.
-@zinit-register-annex "zinit-annex-meta-plugins" \
+@zi::register-annex "zinit-annex-meta-plugins" \
     subcommand:default-ice \
     za-meta-plugins-default-ice-cmd \
     za-meta-plugins-default-ice-cmd-help-handler
